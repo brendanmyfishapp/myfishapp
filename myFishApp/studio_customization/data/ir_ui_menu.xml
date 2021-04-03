@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.myfish_43444356-80ee-4a11-96b2-e450b99c522f" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">myFish</field>
+    <field name="parent_id" eval="False"/>
+    <field name="sequence">10</field>
+    <field name="web_icon">fa fa-diamond,#f1c40f,#34495e</field>
+  </record>
+  <record id="studio_customization.myfish_maintenance_l_fadbc1a0-d536-4e94-b350-e32c073559a8" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.maintenance_log_a16c3791-d7d0-4870-bb89-e0c20ba1f8d8"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Maintenance Log</field>
+    <field name="parent_id" ref="studio_customization.myfish_43444356-80ee-4a11-96b2-e450b99c522f"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.myfish_tank_manageme_faa51d87-162d-4431-be85-625d5cc0c94f" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.tank_management_38d661ee-f901-481a-90ac-266def3f6527"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tank Management</field>
+    <field name="parent_id" ref="studio_customization.myfish_43444356-80ee-4a11-96b2-e450b99c522f"/>
+    <field name="sequence">11</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+</odoo>

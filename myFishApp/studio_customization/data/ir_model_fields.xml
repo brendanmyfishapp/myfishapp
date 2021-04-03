@@ -1,0 +1,554 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.active_maintenance_l_b7aef458-b560-4337-bbce-1acdf5b3ab01" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Active</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_maintenance_log</field>
+    <field name="model_id" ref="studio_customization.maintenance_log_fada95b1-33ca-4c30-af83-5a786814a897"/>
+    <field name="name">x_active</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking">1</field>
+    <field name="translate" eval="False"/>
+    <field name="ttype">boolean</field>
+  </record>
+  <record id="studio_customization.active_tank_manageme_116f6859-1d8d-43d8-ade2-b1c1e2f559df" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Active</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_tank_management</field>
+    <field name="model_id" ref="studio_customization.tank_management_c4ebd40b-fab4-418d-9186-1d0eb91f0eb8"/>
+    <field name="name">x_active</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking">1</field>
+    <field name="translate" eval="False"/>
+    <field name="ttype">boolean</field>
+  </record>
+  <record id="studio_customization.currency_tank_manage_99a99c1e-4e00-4427-8ea3-ac979a1f06d9" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Currency</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_tank_management</field>
+    <field name="model_id" ref="studio_customization.tank_management_c4ebd40b-fab4-418d-9186-1d0eb91f0eb8"/>
+    <field name="name">x_studio_currency_id</field>
+    <field name="on_delete">set null</field>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation">res.currency</field>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">many2one</field>
+  </record>
+  <record id="studio_customization.date_maintenance_log_52e3fd8c-e0d4-47b2-a5af-c5b58919c7d0" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Date</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_maintenance_log</field>
+    <field name="model_id" ref="studio_customization.maintenance_log_fada95b1-33ca-4c30-af83-5a786814a897"/>
+    <field name="name">x_studio_date</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">date</field>
+  </record>
+  <record id="studio_customization.date_tank_management_9c7ff31b-c7fd-481f-a810-140596a4976d" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Date</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_tank_management</field>
+    <field name="model_id" ref="studio_customization.tank_management_c4ebd40b-fab4-418d-9186-1d0eb91f0eb8"/>
+    <field name="name">x_studio_date</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">date</field>
+  </record>
+  <record id="studio_customization.name_maintenance_log_901d3211-45c1-4db3-a3ca-ac7ce92e4508" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Entry Name</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_maintenance_log</field>
+    <field name="model_id" ref="studio_customization.maintenance_log_fada95b1-33ca-4c30-af83-5a786814a897"/>
+    <field name="name">x_name</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking">1</field>
+    <field name="translate" eval="False"/>
+    <field name="ttype">char</field>
+  </record>
+  <record id="studio_customization.name_tank_management_b11bde8f-896a-462d-9be0-f7d826c936e6" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Tank Name</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="True"/>
+    <field name="model">x_tank_management</field>
+    <field name="model_id" ref="studio_customization.tank_management_c4ebd40b-fab4-418d-9186-1d0eb91f0eb8"/>
+    <field name="name">x_name</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking">1</field>
+    <field name="translate" eval="False"/>
+    <field name="ttype">char</field>
+  </record>
+  <record id="studio_customization.new_date_maintenance_2a85c762-8aa9-4a83-84d8-73f189a5e331" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Entry Date</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_maintenance_log</field>
+    <field name="model_id" ref="studio_customization.maintenance_log_fada95b1-33ca-4c30-af83-5a786814a897"/>
+    <field name="name">x_studio_entry_date</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">date</field>
+  </record>
+  <record id="studio_customization.new_decimal_maintena_20f7a827-c2b7-4cee-9c53-e901d4877a64" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Nitrite Value</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_maintenance_log</field>
+    <field name="model_id" ref="studio_customization.maintenance_log_fada95b1-33ca-4c30-af83-5a786814a897"/>
+    <field name="name">x_studio_nitrite_value</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">float</field>
+  </record>
+  <record id="studio_customization.new_decimal_maintena_7613ceb7-5826-44a6-a21a-1ec5d725b315" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Ammonia Value</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_maintenance_log</field>
+    <field name="model_id" ref="studio_customization.maintenance_log_fada95b1-33ca-4c30-af83-5a786814a897"/>
+    <field name="name">x_studio_ammonia_value</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">float</field>
+  </record>
+  <record id="studio_customization.new_decimal_maintena_b871a478-d3a6-4132-95fa-5deb53b64585" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Salinity</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_maintenance_log</field>
+    <field name="model_id" ref="studio_customization.maintenance_log_fada95b1-33ca-4c30-af83-5a786814a897"/>
+    <field name="name">x_studio_salinity</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">float</field>
+  </record>
+  <record id="studio_customization.new_decimal_maintena_cccf26a0-0689-4c2d-b59a-60b2fe7767c6" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Nitrate Value</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_maintenance_log</field>
+    <field name="model_id" ref="studio_customization.maintenance_log_fada95b1-33ca-4c30-af83-5a786814a897"/>
+    <field name="name">x_studio_nitrate_value</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">float</field>
+  </record>
+  <record id="studio_customization.new_decimal_maintena_ff84cd1f-7af1-4cb2-953f-4a712a6916f5" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">PH Value</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_maintenance_log</field>
+    <field name="model_id" ref="studio_customization.maintenance_log_fada95b1-33ca-4c30-af83-5a786814a897"/>
+    <field name="name">x_studio_ph_value</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">float</field>
+  </record>
+  <record id="studio_customization.new_integer_tank_man_ff4c5bc1-c17d-4fc8-a6c0-4637d47306d4" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Tank Size (Gallons)</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_tank_management</field>
+    <field name="model_id" ref="studio_customization.tank_management_c4ebd40b-fab4-418d-9186-1d0eb91f0eb8"/>
+    <field name="name">x_studio_tank_size_gallons</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">integer</field>
+  </record>
+  <record id="studio_customization.notes_tank_managemen_8a4cec80-cb2f-486c-9066-512ee4625700" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Notes</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_tank_management</field>
+    <field name="model_id" ref="studio_customization.tank_management_c4ebd40b-fab4-418d-9186-1d0eb91f0eb8"/>
+    <field name="name">x_studio_notes</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">text</field>
+  </record>
+  <record id="studio_customization.sequence_maintenance_5b4027a2-94e9-40d9-89ff-c396bc77d2e0" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Sequence</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_maintenance_log</field>
+    <field name="model_id" ref="studio_customization.maintenance_log_fada95b1-33ca-4c30-af83-5a786814a897"/>
+    <field name="name">x_studio_sequence</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">integer</field>
+  </record>
+  <record id="studio_customization.sequence_tank_manage_9acd6a28-a99f-4cb1-acd7-c50414184914" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Sequence</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_tank_management</field>
+    <field name="model_id" ref="studio_customization.tank_management_c4ebd40b-fab4-418d-9186-1d0eb91f0eb8"/>
+    <field name="name">x_studio_sequence</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">integer</field>
+  </record>
+  <record id="studio_customization.tank_management_main_61de7ae4-a68d-4e47-814b-a9c8d83bc5e7" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Tank</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_maintenance_log</field>
+    <field name="model_id" ref="studio_customization.maintenance_log_fada95b1-33ca-4c30-af83-5a786814a897"/>
+    <field name="name">x_studio_many2one_field_BAH8P</field>
+    <field name="on_delete">set null</field>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation">x_tank_management</field>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">many2one</field>
+  </record>
+  <record id="studio_customization.value_tank_managemen_c34f135a-f2f8-4b11-ba72-4691ec3ba6f1" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="True"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Value</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_tank_management</field>
+    <field name="model_id" ref="studio_customization.tank_management_c4ebd40b-fab4-418d-9186-1d0eb91f0eb8"/>
+    <field name="name">x_studio_value</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking">1</field>
+    <field name="translate" eval="False"/>
+    <field name="ttype">float</field>
+  </record>
+</odoo>
